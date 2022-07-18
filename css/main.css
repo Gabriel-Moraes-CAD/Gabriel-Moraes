@@ -1,0 +1,127 @@
+/* Nav Bar */
+.navbar-dark{
+    background-color: #303337;
+    opacity: 0.9;
+}
+
+/* Background image 1st */
+.hero{
+    position: relative;
+    height: 100vh;
+    background-color: #303337;
+    overflow: hidden;
+}
+
+.hero__img{
+position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+transform: translateX(-50%) translateY(-50%);
+z-index: 0;
+}
+
+.overlay-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #303337;
+    opacity: .6;
+    z-index: 2;
+}
+
+/* Explore Button */
+.main_scroll-btn{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    color: var(--bs-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.main_scroll-btn:hover{
+    color: var(--bs-light);
+}
+
+.bi{
+    opacity: 0.8;
+}
+
+.main_scroll-btn .bi{
+    transition-delay: 0.8s;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce{
+    from {
+        transform: translateY(Opx);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+/* About page - PRO image */
+.about-img{
+    max-width: 100%;
+    height: 60vh;
+    object-fit:cover;
+    object-position: center;
+    vertical-align: top;
+    margin-top: -25px;
+}
+
+/* About page - text */
+.about-section{
+    max-width: 100%;
+    height: 60vh;
+    vertical-align:top;
+}
+
+/* Contact page - image */
+.contact_img{
+    display: flex;
+    justify-content: center;
+    width: 544px;
+    max-width: 100%;
+    height: 60vh;
+    object-fit:cover;
+    object-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contact page - text */
+.contact_text{
+    width: 544px;
+}
+
+
+/* Footer page */
+.container__footer{
+    background-color: #303337;
+    height: 250px;
+}
+
+
+
+
+/*
+
+cheat sheet for resizing :) 
+
+@media (min-width: 544px {}
+@media (min-width: 768px {}
+@media (min-width: 992px {}
+@media (min-width: 1200px {}
+@media (min-width: 1400px {}
+@media (min-width: 1600px {}
+*/
