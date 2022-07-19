@@ -12,6 +12,14 @@
     overflow: hidden;
 }
 
+@media(max-width: 575.98px){
+    .hero{max-height:70vh;
+    }
+    .main__text{
+        margin-top: -50px;
+    }
+}
+
 .hero__img{
 position: absolute;
 top: 50%;
