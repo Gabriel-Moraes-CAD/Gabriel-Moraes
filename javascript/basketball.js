@@ -2,10 +2,7 @@ let homeScoreDisplay = document.getElementById('homeScore')
 let guestScoreDisplay = document.getElementById('guestScore')
 let countH = 0
 let countG = 0
-
-
 //Home display functions//
-
 function hPlus1() {
     countH += 1
     homeScore.textContent = countH
@@ -18,9 +15,7 @@ function hPlus3() {
      countH += 3
     homeScore.textContent = countH
 }
-
 //Guest display functions//
-
 function gPlus1() {
      countG += 1
     guestScore.textContent = countG
@@ -58,9 +53,7 @@ function period4(){
 
 const startingMinutes = 12;
 let time = startingMinutes * 60;
-
 const countdownEl = document.getElementById('timer');
-
 
 function updatedCountdown(){
     const minutes = Math.floor(time/60);
