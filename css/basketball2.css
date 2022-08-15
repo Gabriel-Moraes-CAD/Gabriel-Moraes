@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'cursedTimer';
+    src: url(/fonts/CursedTimerUlil-Aznm.ttf);
+}
+
+.title{
+    color: black;
+}
+
+body {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.container {
+    width: 500px;
+    height: 250px;
+    background-color: rgb(18, 18, 108);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.square {
+    width: 120px;
+    height: auto;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+
+}
+
+.score {
+    background-color: black;
+    position: relative;
+    height: 70px;
+    margin-bottom: 15px;
+    padding: 5px;
+
+}
+
+h1 {
+    font-family: 'cursedTimer', sans-serif;
+
+}
+
+.numbers {
+    position: relative;
+    justify-items: center;
+    font-size: 40px;
+    top: -58px;
+    color: #F94F6D;
+    text-shadow: 0 0 15px #f46b848e;
+    text-shadow: 0 0 9px #efe5e7d1;
+}
+
+.button {
+    background-color: rgb(18, 18, 108);
+    color: white;
+    font-size: medium;
+    font-weight: normal;
+    font-family: 'cursedTimer', sans-serif;
+    border: white;
+    border-style: solid;
+    padding: 4px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: rgba(211, 205, 241, 0.951);
+    color: rgb(18, 18, 108);
+    font-weight: bold;
+}
+
+/* Timer css */
+
+.timer-container {}
+
+.timer-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.timer {
+    padding: 15px;
+    background-color: black;
+    text-align: center;
+    height: 30px;
+    font-family: 'cursedTimer', sans-serif;
+    font-size: 35px;
+    color: #F94F6D;
+    text-shadow: 0 0 15px #f46b848e;
+    text-shadow: 0 0 9px #efe5e7d1;
+    margin-bottom: 5px;
+
+}
+
+/* Periods css */
+
+.period-container {
+
+    text-align: center;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.periods {
+    margin-left: 40px;
+    padding: 15px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    font-family: 'cursedTimer', sans-serif;
+    font-size: 35px;
+    color: #F94F6D;
+    text-shadow: 0 0 15px #f46b848e;
+    text-shadow: 0 0 9px #efe5e7d1;
+    margin-bottom: 10px;
+
+}
