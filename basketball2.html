@@ -13,68 +13,68 @@
         content="This app was build using Vanilla JavaScript. It will keep track of time, scores of each team and periods of the match" />
     <meta property="og:image" content=" " />
     <title>JavaScript Project - Basketball Scoreboard App</title>
-    <link rel="stylesheet" href="/css/basketball2.css">
+    <link rel="stylesheet" href="./css/basketball2.css">
 
 </head>
 
 <body>
     <div class="main">
-<h2 class="title">JavaScript Project - Basketball Scoreboard App</h2>
-    <div class="container">
-        
-        <!-- home score section -->
-        <div class="square">
-            <h2>Home</h2>
+        <h2 class="title">JavaScript Project - Basketball Scoreboard App</h2>
+        <div class="container">
 
-            <div class="score">
-                <div class="numbers">
-                    <h1 id="homeScore">0</h1>
+            <!-- home score section -->
+            <div class="square">
+                <h2>Home</h2>
+
+                <div class="score">
+                    <div class="numbers">
+                        <h1 id="homeScore">0</h1>
+                    </div>
+                </div>
+
+                <button class="button" onclick="hPlus1()">+1</button>
+                <button class="button" onclick="hPlus2()">+2</button>
+                <button class="button" onclick="hPlus3()">+3</button>
+            </div>
+            <!-- Timer section -->
+            <div class="timer-container">
+                <div class="timer-box">
+                    <div class="timer" id="timer">12:00</div>
+                    <button class="button" onclick="timerStart()">Start</button>
+                    <button class="button" onclick="timerPause()">Pause</button>
+                </div>
+
+                <!-- Periods section -->
+                <div class="period-container">
+                    <div class="periods" id="periods">0</div>
+                    <button class="button" onclick="period1()">1</button>
+                    <button class="button" onclick="period2()">2</button>
+                    <button class="button" onclick="period3()">3</button>
+                    <button class="button" onclick="period4()">4</button>
                 </div>
             </div>
 
-            <button class="button" onclick="hPlus1()">+1</button>
-            <button class="button" onclick="hPlus2()">+2</button>
-            <button class="button" onclick="hPlus3()">+3</button>
-        </div>
-        <!-- Timer section -->
-        <div class="timer-container">
-            <div class="timer-box">
-                <div class="timer" id="timer">12:00</div>
-                <button class="button" onclick="timerStart()">Start</button>
-                <button class="button" onclick="timerPause()">Pause</button>
-            </div>
-
-            <!-- Periods section -->
-            <div class="period-container">
-                <div class="periods" id="periods">0</div>
-                <button class="button" onclick="period1()">1</button>
-                <button class="button" onclick="period2()">2</button>
-                <button class="button" onclick="period3()">3</button>
-                <button class="button" onclick="period4()">4</button>
-            </div>
-        </div>
 
 
+            <!-- Guest Score section  -->
+            <div class="square">
+                <h2>Guest</h2>
 
-        <!-- Guest Score section  -->
-        <div class="square">
-            <h2>Guest</h2>
-
-            <div class="score">
-                <div class="numbers">
-                    <h1 id="guestScore">0</h1>
+                <div class="score">
+                    <div class="numbers">
+                        <h1 id="guestScore">0</h1>
+                    </div>
                 </div>
-            </div>
-            <button class="button" onclick="gPlus1()">+1</button>
-            <button class="button" onclick="gPlus2()">+2</button>
-            <button class="button" onclick="gPlus3()">+3</button>
+                <button class="button" onclick="gPlus1()">+1</button>
+                <button class="button" onclick="gPlus2()">+2</button>
+                <button class="button" onclick="gPlus3()">+3</button>
 
+            </div>
         </div>
     </div>
-    </div>
 
 
-    <script src="/javascript/basketball.js"></script>
+    <script src="./javascript/basketball.js"></script>
 </body>
 
 
