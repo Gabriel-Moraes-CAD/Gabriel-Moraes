@@ -1,0 +1,387 @@
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="html, css, javascript, front end developer, developer, JavaScript project">
+        <meta name="author" content="Gabriel Moraes">
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="JavaScript Project - Basketball Scoreboard" />
+        <meta property="og:description"
+            content="This app was build using Vanilla JavaScript. It will keep track of time, scores of each team and periods of the match" />
+        <meta property="og:image" content="../images/java.png" />
+        <title>JavaScript Project</title>
+        <link rel="shortcut icon" href="../images/icon-title.svg">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+
+    <!--NavBar starts-->
+    <div class="bg-primary">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="./index.html">Gabriel Moraes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#project">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--NavBar Ends!!-->
+
+    <!-- Top page - Intro -->
+    <section class="bg-dark text-light p-5 text-center text-sm-star">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="lead text-start">
+                    <h1>JavaScript Projects</h1>
+                    <p>Here you'll find a collection of my projects.<br>
+                    Everything was built using <span class="text-warning">Vanilla Javascript</span> with a bit of <span class="text-primary">HTLM</span> , 
+                    <span class="text-success">CSS</span> and <span class="text-info">Bootstrap 5</span>.</p>
+                    <p>Like what you see? Let's chat!</p>
+                    <button href="mailto:mr.gabriel.moraes@gmail.com?subject=Let's Chat" role="button" class="btn btn-primary">Email</button>
+
+                </div>
+                <img class="img-fluid w-50 ms-3 d-none d-md-block" src="../images/java.png" alt="cartoon of a male working on java">
+
+
+            </div>
+
+        
+        </div>
+
+
+    </section>
+
+    <!-- 1st Project Page description + picture! -->
+
+    <section class="bg-light text-dark p-5 text-center text-sm-star">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="lead text-start">
+                    <h1>Passenger Counter App</h1>
+                    <p>Below it's a counting app. 
+                    By pressing the count button the app will keep track of the count. This app was designed to
+                    substitute old methods.
+                    If you would like to save the count and start a new one, simply press save and the app will
+                    print the count below. The main count will also be reset to zero.
+                    If you wish to reset the previous entries section simply refresh the browser.
+                    
+                    I'd like to leave a special thanks to Per Harald Borgen and the Scrimba platform for walking me through the
+                    creation of this app.
+                    </p>
+    
+                </div>
+                <img class="img-fluid w-50 ms-3 d-none d-md-block" src="../images/metro.svg"
+                    alt="cartoon of a male working on java">
+    
+    
+            </div>
+    
+    
+        </div>
+
+    <!-- 1st Project Page APP + Code window -->
+    
+    </section>
+    
+    <section class="bg-light text-dark p-5 text-center text-sm-star border-bottom border-2">
+        <div class="container mb-5">
+            
+            <div class="d-flex row align-items-center justify-content-between">
+
+                <div class="col-lg-6 d-flex justify-content-center mb-sm-5">
+                <div class="col-10 border border-secondary">
+                    <div class="">
+                        <h2>Number of Passengers</h2>
+                    </div>
+                    <div>
+                        <div class="numbers p-3 text-light rounded d-flex justify-content-center">
+                            <h1 class="bg-light col-6 p-3 text-dark " id="count-el">0</h1>
+                        </div>
+                        </p>
+                        <button class="btn btn-secondary btn-md" id="increment-btn" onclick="increment()">Count</button>
+                        <button class="btn btn-success btn-md" id="save-btn" onclick="save()">Save</button>
+                        <p class="mt-2"id="save-el">Previous Entries: </p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <p class="text-end p-2 me-2 mb-0 bg-warning border border-secondary rounded-top">JavaScript code <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-filetype-js"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z" />
+                    </svg></p>
+                    <div class="text-start p-2 me-2 border border-secondary bg-dark text-white rounded-bottom">
+                    <p><span class=text-primary>let</span> <span class=text-info>saveEL</span> = <span class=text-info>document</span>.<span class=text-warning>getElementById(</span><span class=text-danger>"save-el"</span><span class=text-warning>)</span> <br>
+                    <span class=text-primary>let</span> <span class=text-info>countEL</span> = <span class=text-info>document</span>.<span class=text-warning>getElementById(</span><span class=text-danger>"count-el"</span><span class=text-warning>)</span></p>
+                    <p><span class=text-primary>let</span> <span class=text-info>count</span> = <span class=text-success>0</span></p>
+                    <p><span class=text-primary>function</span> <span class=text-warning>increment( ) {</span><br>
+                    <span class=text-info>count</span> += <span class=text-success>1</span> <br>
+                    <span class=text-info>countEL</span>.<span class=text-info>textContent</span> = <span class=text-info>count</span><br>
+                    <span class=text-warning>}</span></p>
+                    <p><span class=text-primary>function</span><span class=text-warning> save( ) {</span><br>
+                    <span class=text-primary>let</span> <span class=text-info>countStr</span> = <span class=text-info>count</span> + <span class=text-danger>" - "</span><br>
+                    <span class=text-info>saveEL</span>.<span class=text-info>textContent</span> += <span class=text-info>countStr</span><br>
+                    <span class=text-info>countEL</span>.<span class=text-info>textContent</span> = <span class=text-success>0</span><br>
+                    <span class=text-info>count</span> = <span class=text-success>0</span><br>
+                    <span class=text-warning>}</span></p>
+             
+                    </div>
+
+
+                </div>
+                
+                <!-- <img class="img-fluid w-50 ms-3 d-none d-md-block" src="../images/metro.svg"
+                    alt="cartoon of a male working on java"> -->
+    
+    
+            </div>
+    
+    
+        </div>
+    
+    
+    </section>
+
+    <!-- 2nd Project Page description + picture! -->
+
+    <section class="bg-light text-dark p-5 text-center text-sm-star">
+    <div class="container mt-5">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="lead text-start">
+                <h1>Basketball Scoreboard App</h1>
+                <p>This is a Basketball Scoreboard app. 
+                This app will keep track of scores, periods and time (12 minutes).<br>
+                A very straightforward user interface with simple options to keep track of your basketball game.
+                
+                I'd like to leave a special thanks to Per Harald Borgen and the Scrimba platform for walking me through
+                the creation of this app.
+
+                </p>
+
+            </div>
+            <img class="img-fluid w-50 ms-3 d-none d-md-block" src="../images/basketball2.png"
+                alt="cartoon of a male working on java">
+
+
+        </div>
+
+
+    </div>
+
+    <!-- 2nd Project Page APP + Code window -->
+
+
+        </section>
+        
+        <section class="bg-light text-dark p-5 text-center text-sm-star border-bottom border-2">
+                <div class="d-flex row align-items-center justify-content-center"> 
+                    
+                    <div class="col-lg-6 text-center justify-content-center d-flex p-3 mb-0 mb-sm-5">
+                   <div class="col d-flex justify-content-center border border-secondary py-3">
+                       
+                        <div class="col-4"> 
+                        <div class="">
+                        <h2>Home</h2>
+                        </div>
+                        <div>
+                            <p>
+                            <div class="numbers p-3 rounded d-flex justify-content-center">
+                                <h1 class="col-6 bg-secondary text-dark bg-opacity-25 " id="homeScore">0</h1>
+                            </div>
+                            </p>
+                            <button class="btn btn-primary btn-sm" onclick="hPlus1()">+1</button>
+                            <button class="btn btn-primary btn-sm" onclick="hPlus2()">+2</button>
+                            <button class="btn btn-primary btn-sm" onclick="hPlus3()">+3</button>
+                        </div>
+                    </div>
+                    
+                    <div class="col-auto">
+                        <div class="">
+                            <h2>Timer</h2>
+                        </div>
+                        <div>
+                    
+                            <p>
+                            <div class="bg-secondary text-dark bg-opacity-25 p-1">
+                                <h1 class="fs-3" id="timer">12:00</h1>
+                            </div>
+                            </p>
+                            <div class="mt-4">
+
+                                <button class="btn btn-primary btn-sm" onclick="timerStart()">Start</button>
+                                <button class="btn btn-primary btn-sm" onclick="timerPause()">Pause</button>
+                              
+                            </div>
+                    
+                    
+                        </div>
+                    </div>
+                    
+                    <div class="col-4">
+                        <div class="">
+                            <h2>Guest</h2>
+                        </div>
+                        <div>
+                            <p>
+                            <div class="numbers p-3 d-flex justify-content-center">
+                                <h1 class="col-6 bg-secondary text-dark bg-opacity-25 " id="guestScore">0</h1>
+                            </div>
+                            </p>
+                             <button class="btn btn-primary btn-sm" onclick="gPlus1()">+1</button>
+                             <button class="btn btn-primary btn-sm" onclick="gPlus2()">+2</button>
+                             <button class="btn btn-primary btn-sm" onclick="gPlus3()">+3</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+
+
+
+                    <div class="col-lg-6">
+                        <p class="text-end p-2 me-2 mb-0 bg-warning border border-secondary rounded-top">JavaScript code <svg
+                                xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                class="bi bi-filetype-js" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z" />
+                            </svg></p>
+                        <div class="text-start p-2 me-2 border border-secondary bg-dark text-white rounded-bottom overflow-scroll" style="max-height:400px;">
+                            <p><span class=text-primary>let</span> <span class=text-info>homeScoreDisplay</span> = <span class=text-info>document</span>.<span class=text-warning>getElementById(</span><span class=text-danger>'homeScore'</span><span class="text-warning">)</span><br>
+                            <span class=text-primary>let</span> <span class=text-info>guestScoreDisplay</span> = <span class=text-info>document</span>.<span class=text-warning>getElementById(</span><span class=text-danger>'guestScore'</span><span class="text-warning">)</span><br>
+                            <span class=text-primary>let</span> <span class=text-info>countH</span> = <span class="text-success">0</span><br>
+                            <span class=text-primary>let</span> <span class=text-info>countG</span> = <span class="text-success">0</span> </p>
+
+                            <p><span class=text-success>//Home display functions//</span></p>
+                            <p><span class=text-primary>function</span> <span class="text-warning">hPlus1( ) {</span>  <br>
+                            <span class=text-info>countH</span> += <span class="text-success">1</span><br>
+                            <span class=text-info>homeScore</span>.<span class=text-info>textContent</span> = <span class=text-info>countH</span><br>
+                            <span class="text-warning">}</span><br>
+                            <span class=text-primary>function</span> <span class="text-warning">hPlus2( ) {</span><br>
+                            <span class=text-info>countH</span> += <span class="text-success">2</span><br>
+                            <span class=text-info>homeScore</span>.<span class=text-info>textContent</span> = <span class=text-info>countH</span><br>
+                            <span class="text-warning">}</span><br>
+                            <span class=text-primary>function</span> <span class="text-warning">hPlus3( ) {</span><br>
+                            <span class=text-info>countH</span> += <span class="text-success">3</span><br>
+                            <span class=text-info>homeScore</span>.<span class=text-info>textContent</span> = <span class=text-info>countH</span><br>
+                            <span class="text-warning">}</span></p>
+
+                            <p><span class="text-success">//Guest display functions//</span></p>
+
+                            <span class=text-primary>function</span> <span class="text-warning">gPlus1( ) {</span><br>
+                            <span class=text-info>countG</span> += <span class="text-success">1</span><br>
+                            <span class=text-info>guestScore</span>.<span class=text-info>textContent</span> = <span class=text-info>countG</span><br>
+                            <span class="text-warning">}</span><br>
+                            <span class=text-primary>function</span> <span class="text-warning">gPlus2( ) {</span><br>
+                            <span class=text-info>countG</span> += <span class="text-success">2</span><br>
+                            <span class=text-info>guestScore</span>.<span class=text-info>textContent</span> = <span class=text-info>countG</span><br>
+                            <span class="text-warning">}</span><br>
+                            <span class=text-primary>function</span> <span class="text-warning">gPlus3( ) {</span><br>
+                            <span class=text-info>countG</span> += <span class="text-success">3</span><br>
+                            <span class=text-info>guestScore</span>.<span class=text-info>textContent</span> = <span class=text-info>countG</span><br>
+                            <span class="text-warning">}</span></p>
+                            
+                        
+                            
+                           <p><span class=text-success>//Timer display functions//</span></p>
+                            
+                            <p><span class=text-primary>const</span> <span class=text-info>startingMinutes</span> = <span class="text-success">12</span>;<br>
+                            <span class=text-primary>let</span> <span class=text-info>time</span> = <span class=text-info>startingMinutes</span> * <span class="text-success">60</span>;<br>
+                            <span class=text-primary>const</span> <span class=text-info>countdownEl</span> = <span class=text-info>document</span>.<span class=text-warning>getElementById(</span><span class="text-danger">'timer'</span><span class="text-warning">)</span>;</p>
+                            
+                            <p><span class=text-primary>function</span> <span class=text-warning>updatedCountdown( ) {</span>
+                            <span class=text-primary>const</span> <span class=text-info>minutes</span> = <span class=text-info>Math</span>.<span class=text-warning>floor</span><span class=text-danger>(</span><span class=text-info>time</span>/<span class="text-success">60</span><span class=text-danger>)</span>;<br>
+                            <span class=text-primary>let</span> <span class=text-info>seconds</span> = <span class=text-info>time</span> % <span class="text-success">60</span>; <br>
+                            <span class="text-warning">}</span></p>
+                            <p><span class=text-info>seconds</span> = <span class=text-info>seconds</span> &#60 <span class="text-success">10</span> ? <span class=text-danger>'0'</span> + <span class=text-info>seconds</span> : <span class=text-info>seconds</span>;<br> 
+                            <span class=text-info>countdownEL</span>.<span class=text-info>innerHTML</span> =<span class=text-DANGER>`${</span><span class=text-info>minutes</span><span class=text-danger>}:${</span><span class=text-info>seconds</span><span class=text-danger>}`</span>; <br>
+                            <span class=text-info>time</span>--;<br>
+                            <span class=text-primary>function</span> <span class=text-warning>timerStart( ) {</span><br>
+                            <span class=text-info>interval</span> = <span class=text-warning>setInterval</span><span class=text-danger>(</span><span class=text-warning>updatedCountdown</span>, <span class=text-success>1000</span><span class=text-danger>)</span>;<br> 
+                            <span class="text-warning">}</span> <br>
+                            <span class=text-primary>function</span> <span class="text-warning">timerPause( ) {</span><br>
+                                <span class="text-warning">clearInterval</span><span class=text-danger>(</span><span class="text-info">interval</span><span class=text-danger>)</span>;<br>
+                                <span class="text-info">interval</span> = <span class="text-info">null</span>; <br>
+                                <span class="text-warning">}</span><br>
+                            </p>
+        
+                        </div>
+        
+        
+                    </div>
+
+                </div>
+        
+        
+            
+        
+        
+        </section>
+
+
+<!-- Footer begins-->
+
+<div class="bg-dark p-5 ">
+    <div class="row ">
+        <div class="col text-center mt-5 p-4">
+            <a href="https://github.com/Gabriel-Moraes-CAD" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-github me-1"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/gabriel-moraes-a51ab3143/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-linkedin ms-2"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+            </a>
+            <div class="col-12 text-center mt-3">
+                <a class="btn btn-outline-secondary btn-sm" href="#about"> About</a>
+                <a class="btn btn-outline-secondary btn-sm" href="#project">Projects</a>
+                <a class="btn btn-outline-secondary btn-sm" href="#contact">Contact</a>
+            </div>
+
+            <div class="col12 text-center text-secondary mt-2">
+                <footer> &copy 2022 Gabriel Moraes. All rights reserved.</footer>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+    <!-- JavaScript File for commands -->
+    <script src="../javascript/javascript-project-file.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
