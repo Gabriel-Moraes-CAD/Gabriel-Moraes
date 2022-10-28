@@ -1,0 +1,62 @@
+#css_logo{
+    animation: logo 4s ease 1;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes logo {
+    from {
+        transform:rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);    }
+}
+#js_logo {
+    animation: js 4s ease 1;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes js {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);    }
+}
+#html_logo {
+    animation: html 4s ease 1;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes html {
+    from {
+        transform: rotateZ(360deg);
+    }
+
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
+#react_logo {
+    animation: reactR 7s linear infinite;
+    animation-delay: 5s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes reactR {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
