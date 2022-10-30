@@ -1,0 +1,17 @@
+.card-img{
+    width: 18rem;
+    height: 30rem;
+    
+}
+@media screen and (max-width: 768px){
+    .card-img {
+            width: 12rem;
+            height: 17rem;
+        }
+}
+@media screen and (max-width: 576px) {
+    .card-img {
+        width: 9rem;
+        height: 14rem;
+    }
+}

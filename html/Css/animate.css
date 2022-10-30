@@ -3,25 +3,23 @@
     transform-origin: center;
     transform-box: fill-box;
 }
-
 @keyframes logo {
     from {
         transform:rotateZ(0deg);
     }
     to {
-        transform: rotateZ(360deg);    }
+        transform: rotateZ(360deg);    
+    }
 }
 #js_logo {
     animation: js 4s ease 1;
     transform-origin: center;
     transform-box: fill-box;
 }
-
 @keyframes js {
     from {
         transform: scale(0);
     }
-
     to {
         transform: scale(1);    }
 }
@@ -30,17 +28,14 @@
     transform-origin: center;
     transform-box: fill-box;
 }
-
 @keyframes html {
     from {
         transform: rotateZ(360deg);
     }
-
     to {
         transform: rotateZ(0deg);
     }
 }
-
 #react_logo {
     animation: reactR 7s linear infinite;
     animation-delay: 5s;
@@ -52,11 +47,34 @@
     from {
         transform: rotateZ(0deg);
     }
-
     to {
         transform: rotateZ(360deg);
     }
 }
+#cellphone{
+    animation: cellphone 0.5s alternate infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes cellphone {
+    from {
+        transform:rotateZ(-5deg);
+    }
+    to {
+        transform:rotateZ(5deg);    
+    }
+}
 
-
-
+#oldphone {
+    animation: oldphone 1s alternate infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes oldphone {
+    from {
+        transform: rotateZ(5deg);
+    }
+    to {
+        transform: rotateZ(-5deg);
+    }
+}
